@@ -1,9 +1,11 @@
 import React from 'react';
 import('./App.scss');
+import {Navbar} from './Navbar';
+
 export function App(){
     return (
         <div>
-            <h1 className='dbp'> Welcome</h1>
+            <Navbar/>
         </div>
     );
 }

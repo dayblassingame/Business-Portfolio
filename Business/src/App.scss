@@ -1,3 +1,7 @@
-.dbp{
-    color: blue;
-}
+//utilities
+@import './stylesheets/utilities/utilities';
+//Components
+@import './stylesheets/components/navbar';
+
+//typography
+@import './stylesheets/typography/typography';
