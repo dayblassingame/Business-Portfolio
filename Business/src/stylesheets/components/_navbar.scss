@@ -1,0 +1,28 @@
+@import '../utilities/utilities';
+@import '../typography/typography.scss';
+
+.bp-C-Navbar_container{
+    height: 4rem;
+    margin: $margin-none;
+
+    .bp-C-Navbar_list{
+        list-style: none;
+        margin: $margin-none;
+        padding: $padding-none;
+
+        .bp-C-Navbar_list_items{
+            padding: $padding-top-large $padding-left-large;
+            font-family: $font-family;
+            font-size: $small-heading-text-size;
+
+            a{
+                color: black;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
