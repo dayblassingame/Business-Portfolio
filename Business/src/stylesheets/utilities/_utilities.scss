@@ -9,3 +9,24 @@
 .bp-U-text-align-center{
     text-align: center;
 }
+
+.bp-U-flexbox_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.bp-U-flexbox_one-half{
+    display: inline-block;
+    width: 50%;
+}
+
+.bp-U-flexbox_one-third{
+    display: inline-block;
+    width: 33%;
+}
+
+.bp-U-flexbox_two-thirds{
+    display: inline-block;
+    width: 67%;
+}
