@@ -25,4 +25,10 @@
             }
         }
     }
+    @media screen and (max-width: $max-breakpoint-large) {
+        .bp-C-Navbar_list{
+            display: none;
+        }
+    }
+
 }
