@@ -1,22 +1,23 @@
-.dp-C-Landing_container{
+.bp-C-Landing_container{
     height: 50%;
-    width: 100%;
-    margin: $margin-large $margin-small;
+    width: inherit;
+    padding: $padding-medium $padding-small;
 
-    .dp-C-Landing_imgContainer{
+    .bp-C-Landing_imgContainer{
         height: inherit;
         justify-content: center;
-        margin-right: $margin-small;
+        padding-right: $padding-small;
 
-        .dp-C-Landing_img{
+        .bp-C-Landing_img{
             height: auto;
             width: 100%;
             border-radius: 66%;
         }
     }
 
-    .dp-C-Landing_description{
-        height: 20rem;
+    .bp-C-Landing_description{
+        height: 15rem;
         padding-left: $padding-small;
+        vertical-align: middle;
     }
 }
