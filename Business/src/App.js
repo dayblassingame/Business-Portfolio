@@ -9,7 +9,7 @@ export function App(){
         <div>
             <Navbar/>
             <Landing imgSrc ='./images/profile.jpg' />
-            <Footer></Footer>
+            <Footer/>
         </div>
     );
 }

@@ -1,16 +1,26 @@
 @import '../utilities/utilities';
 @import '../typography/typography.scss';
 
-.bp-C-Navbar_container{
+.bp-C-TopNavbar_container{
     height: 20%;
     margin: $margin-small $margin-small;
 
-    .bp-C-Navbar_list{
+    .bp-C-SideNavbar_list{
+        list-style: none;
+        margin: $margin-none;
+        padding: $padding-none;
+        .bp-C-SideNavbar_list_items{
+            padding: $padding-extra-small $padding-extra-small;
+            font-family: $font-family;
+        }
+    }
+
+    .bp-C-TopNavbar_list{
         list-style: none;
         margin: $margin-none;
         padding: $padding-none;
 
-        .bp-C-Navbar_list_items{
+        .bp-C-TopNavbar_list_items{
             padding: $padding-extra-small $padding-extra-small;
             font-family: $font-family;
             font-size: $small-heading-text-size;
@@ -26,7 +36,13 @@
         }
     }
     @media screen and (max-width: $max-breakpoint-large) {
-        .bp-C-Navbar_list{
+        .bp-C-TopNavbar_list{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: $min-breakpoint-large) {
+        .bp-C-Hamburger_icon{
             display: none;
         }
     }
