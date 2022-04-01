@@ -4,14 +4,28 @@ $small-heading-text-size: 1rem;
 //padding for device size
 $padding-none: 0px;
 $padding-extra-small: 0.8rem;
-$padding-extra-small: 1rem;
 $padding-small: 2.5rem;
 $padding-medium: 5rem;
 $padding-large: 8rem;
+$padding-extra-large: 11rem;
+
 
 //margins
-$margin-none: none;
+$margin-none: 0px;
 $margin-extra-small: 1rem;
 $margin-small: 2.5rem;
 $margin-medium: 5rem;
 $margin-large: 8rem;
+
+//breakpoints
+$max-breakpoint-extra-small: 376px;
+$max-breakpoint-small: 415px;
+$max-breakpoint-medium: 600px;
+$max-breakpoint-large: 748px;
+$max-breakpoint-extra-large: 950px;
+
+$min-breakpoint-extra-small: 376px;
+$min-breakpoint-small: 415px;
+$min-breakpoint-medium: 601px;
+$min-breakpoint-large: 748px;
+$min-breakpoint-extra-large: 950px;
