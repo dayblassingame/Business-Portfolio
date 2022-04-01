@@ -1,12 +1,39 @@
 .bp-C-Landing_container{
-    height: 50%;
     width: inherit;
-    padding: $padding-medium $padding-small;
+    padding: $padding-medium $padding-extra-small;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    @media screen and (min-width: $min-breakpoint-large){
+        display: block;
+        width: $min-breakpoint-medium;
+        padding-bottom: $padding-extra-large;
+    }
+
+    @media screen and (min-width: $min-breakpoint-extra-small) and (max-width: $max-breakpoint-large){
+        display: block;
+        width: $min-breakpoint-extra-small;
+        padding-bottom: $padding-extra-large;
+    }
+
+    @media screen and (max-width: $max-breakpoint-extra-small){
+        display: block;
+        width: 300px
+    }
 
     .bp-C-Landing_imgContainer{
         height: inherit;
         justify-content: center;
         padding-right: $padding-small;
+        display: inline-block;
+        width: 33%;
+
+        @media screen and (max-width: $max-breakpoint-extra-large) {
+            width: 90%;
+            padding-bottom: $padding-small;
+            display: block;
+        }
 
         .bp-C-Landing_img{
             height: auto;
@@ -16,8 +43,15 @@
     }
 
     .bp-C-Landing_description{
-        height: 15rem;
+        height: auto;
         padding-left: $padding-small;
         vertical-align: middle;
+        display: inline-block;
+        width: 67%;
+
+        @media screen and (max-width: $max-breakpoint-large) {
+            width: 90%;
+            display: block;
+        }
     }
 }

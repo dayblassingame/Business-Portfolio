@@ -1,14 +1,14 @@
 @import '../utilities/utilities';
 @import '../typography/typography.scss';
 
-.bp-C-TopNavbar_container{
+.bp-C-Navbar_container{
     height: 20%;
     margin: $margin-small $margin-small;
 
     .bp-C-SideNavbar_list{
         list-style: none;
         margin: $margin-none;
-        padding: $padding-none;
+        padding: $padding-extra-small $padding-none;
         .bp-C-SideNavbar_list_items{
             padding: $padding-extra-small $padding-extra-small;
             font-family: $font-family;
@@ -24,7 +24,10 @@
             padding: $padding-extra-small $padding-extra-small;
             font-family: $font-family;
             font-size: $small-heading-text-size;
-
+            
+            @media screen and (max-width: $max-breakpoint-large) {
+                display: none;
+            }
             a{
                 color: black;
                 text-decoration: none;
@@ -33,11 +36,6 @@
                     text-decoration: underline;
                 }
             }
-        }
-    }
-    @media screen and (max-width: $max-breakpoint-large) {
-        .bp-C-TopNavbar_list{
-            display: none;
         }
     }
 

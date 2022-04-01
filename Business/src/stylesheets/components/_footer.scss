@@ -1,6 +1,8 @@
 .bp-C-Footer_container{
     width: 80%;
-    padding: $padding-small $padding-none;   
+    padding: $padding-small $padding-none;
+    margin: $margin-extra-small $margin-none; 
+    display: block;  
 
     a{
         display: inline-block;
