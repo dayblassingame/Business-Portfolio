@@ -5,21 +5,29 @@
     flex-direction: row;
     flex-wrap: nowrap;
 
-    @media screen and (min-width: $min-breakpoint-large){
+    @media screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) and (orientation: portrait){
         display: block;
+       // max-height: 650px;
         width: $min-breakpoint-medium;
+        padding-bottom: $padding-extra-large;
+    }
+
+    @media screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) and (orientation: landscape){
+      //  max-height: 650px;
+        width: $min-breakpoint-large;
         padding-bottom: $padding-extra-large;
     }
 
     @media screen and (min-width: $min-breakpoint-extra-small) and (max-width: $max-breakpoint-large){
         display: block;
+      //  max-height: 500px;
         width: $min-breakpoint-extra-small;
         padding-bottom: $padding-extra-large;
     }
 
     @media screen and (max-width: $max-breakpoint-extra-small){
         display: block;
-        width: 300px
+      //  max-height: 667px;
     }
 
     .bp-C-Landing_imgContainer{
