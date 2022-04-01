@@ -20,6 +20,5 @@ export function Footer(){
             Contact Me</a>
         </div>
     );
-
     //icons by icon8 https://icons8.com/license
 } 

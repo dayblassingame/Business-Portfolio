@@ -1,10 +1,13 @@
 //typography
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import './stylesheets/typography/typography';
 
 //utilities
 @import './stylesheets/utilities/utilities';
+@import './stylesheets/utilities/colors';
+@import './stylesheets/utilities/mixins';
 //Components
+@import './stylesheets/components/button';
 @import './stylesheets/components/navbar';
 @import './stylesheets/components/landing';
 @import './stylesheets/components/footer';
-

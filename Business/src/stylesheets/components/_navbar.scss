@@ -2,6 +2,7 @@
 @import '../typography/typography.scss';
 
 .bp-C-Navbar_container{
+    
     height: 20%;
     margin: $margin-small $margin-small;
 
@@ -11,7 +12,6 @@
         padding: $padding-extra-small $padding-none;
         .bp-C-SideNavbar_list_items{
             padding: $padding-extra-small $padding-extra-small;
-            font-family: $font-family;
         }
     }
 
@@ -21,9 +21,9 @@
         padding: $padding-none;
 
         .bp-C-TopNavbar_list_items{
+            @include bp-U-small-heading;
+            
             padding: $padding-extra-small $padding-extra-small;
-            font-family: $font-family;
-            font-size: $small-heading-text-size;
             
             @media screen and (max-width: $max-breakpoint-large) {
                 display: none;

@@ -1,0 +1,19 @@
+.bp-C-Button{
+    @include bp-U-small-heading;
+
+    height: auto;
+    width: auto;
+    padding: $padding-extra-small $padding-small;
+    background-color: $white;
+    color: $pink;
+    border-radius: 10px;
+    border: 2px solid $pink;
+    justify-content: center;
+    text-align: center;
+
+    &:hover{
+        border-color: $white;
+        background-color: $pink;
+        color: $white;
+    }
+}

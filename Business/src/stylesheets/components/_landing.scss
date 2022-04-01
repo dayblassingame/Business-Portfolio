@@ -1,4 +1,6 @@
 .bp-C-Landing_container{
+    @include bp-U-small-heading;
+    
     width: inherit;
     padding: $padding-medium $padding-extra-small;
     display: flex;

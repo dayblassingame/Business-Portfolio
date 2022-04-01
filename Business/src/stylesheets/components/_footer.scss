@@ -1,4 +1,6 @@
 .bp-C-Footer_container{
+    @include bp-U-small-heading;
+    
     width: 80%;
     padding: $padding-small $padding-none;
     margin: $margin-extra-small $margin-none; 
