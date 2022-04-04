@@ -11,12 +11,12 @@
     @media screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) and (orientation: portrait){
         display: block;
         height: 45rem;
-        width: auto;
+        width: inherit;
         margin-bottom: $margin-medium;
     }
 
     @media screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) and (orientation: landscape){
-        width: auto;
+        width: inherit;
         padding-bottom: $padding-none;
         height: 45rem;
 
@@ -25,7 +25,7 @@
 
     @media screen and (min-width: $min-breakpoint-extra-small) and (max-width: $max-breakpoint-large){
         display: block;
-        width: auto;
+        width: inherit;
         padding-bottom: $padding-none;
         height: 45rem;
 
@@ -34,7 +34,7 @@
     @media screen and (max-width: $max-breakpoint-extra-small){
         display: block;
         height: 45rem;
-
+        width: inherit
       //  max-height: 667px;
     }
 
