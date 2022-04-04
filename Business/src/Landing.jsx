@@ -9,10 +9,13 @@ export function Landing() {
                 <div className='bp-C-Landing_imgContainer'>
                     <img src={profile} className="bp-C-Landing_img"/>
                 </div>
-                <div className='bp-C-Landing_description'>
+                <div className='bp-C-Landing_descriptionContainer'>
+                    <div className='bp-C-Landing_description-text'>
                     <h3>Day Blassingame</h3>
+                    <hr/>
                     <h1>Software Engineer</h1>
-                    <Button id = 'Contact Me' type='default'/>
+                    <Button name='Schedule a meeting' id = 'schedule' type='default'/>
+                </div>
                 </div>
             </div>
     );

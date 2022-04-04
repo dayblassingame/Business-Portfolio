@@ -10,10 +10,11 @@
     border: 2px solid $pink;
     justify-content: center;
     text-align: center;
+    
 
     &:hover{
-        border-color: $white;
-        background-color: $pink;
-        color: $white;
+        border-color: $dark-green;
+        background-color: $white;
+        color: $dark-green;
     }
 }

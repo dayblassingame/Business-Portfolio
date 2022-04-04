@@ -3,6 +3,7 @@ import('./App.scss');
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useState } from "react";
+import logo from './images/logo.png';
 //navigation bar for different pages of site
 
 export function Navbar(){
@@ -16,6 +17,7 @@ const hamburgerMenu = () => {
         <div className='bp-C-Navbar_container bp-U-align-content-center'>
             {/* hamburger menu for navigation on smaller devices */}
             <button id='hamburgerMenu' className='btn bp-C-Hamburger_icon' onClick={hamburgerMenu}><FontAwesomeIcon icon={isActive ? solid('bars') : solid('xmark')} /></button>
+            <img className='bp-logo' src={logo}/>
             <ul id='sideNavbar' className={isActive ? "bp-C-SideNavbar_list bp-U-display-none": "bp-C-SideNavbar_list"}>
                 <li className='bp-C-SideNavbar_list_items bp-U-display-block'> <a href=''>Home </a></li>
                 <li className='bp-C-SideNavbar_list_items bp-U-display-block'> <a href=''>About</a></li>

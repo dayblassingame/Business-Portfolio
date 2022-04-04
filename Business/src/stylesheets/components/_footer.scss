@@ -1,26 +1,28 @@
 .bp-C-Footer_container{
     @include bp-U-small-heading;
-    
-    width: 80%;
+    background-color: $pink;
+    width: 100%;
     padding: $padding-small $padding-none;
-    margin: $margin-extra-small $margin-none; 
-    display: block;  
-
+    margin:  $margin-none; 
+    
     a{
         display: inline-block;
         text-decoration: none;
-        color: black;
+        color: $white;
         text-align: center;
+        font-size: small;
 
-        &:visited{
-            color: black;
-            text-decoration: none;
+        &:hover{
+            color: $white;
+            text-decoration: underline;
+            text-underline-offset: 1rem;
         }
     }
 
     .dp-C-Footer_icon{
-        height: 20px;
-        width: 20px;
-        padding-right: $padding-extra-small;
+        height: 1rem;
+        width: 1rem;
+        color: $white;
+        padding-right: $padding-extra-small
     }
 }

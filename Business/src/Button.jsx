@@ -11,7 +11,7 @@ function Button(props){
     }
 
     return(
-        <button id={props.id} className={className}> Contact Me         
+        <button id={props.id} className={className}>  {props.name}       
         </button>
     );
 }

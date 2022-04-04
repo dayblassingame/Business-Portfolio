@@ -1,0 +1,50 @@
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes spin {
+    25% {
+        transform: rotate(90deg);
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid $pink;
+
+    }
+    50% {
+        transform: rotate(180deg);
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid $pink;
+        border-left: 3px solid $pink;
+    }
+    75% {
+        transform: rotate(270deg);
+        border-top: 3px solid transparent;
+        border-right: 3px solid $pink;
+        border-bottom: 3px solid $pink;
+        border-left: 3px solid $pink;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top: 3px solid $pink;
+        border-right: 3px solid $pink;
+        border-bottom: 3px solid $pink;
+        border-left: 3px solid $pink;
+    }
+}
+
+@keyframes loading {
+    0%, 100% {
+        font-size: 1.5rem;
+    }
+    50% {
+        font-size: 1.9rem;
+    }
+}

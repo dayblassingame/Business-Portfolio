@@ -1,13 +1,21 @@
 //typography
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lavishly+Yours&display=swap');
 @import './stylesheets/typography/typography';
 
 //utilities
 @import './stylesheets/utilities/utilities';
 @import './stylesheets/utilities/colors';
 @import './stylesheets/utilities/mixins';
-//Components
+@import './stylesheets/utilities/animations';
+
+//
+@import './stylesheets/components/spinner';
 @import './stylesheets/components/button';
 @import './stylesheets/components/navbar';
 @import './stylesheets/components/landing';
 @import './stylesheets/components/footer';
+
+body{
+    margin: auto;
+    width: 90%;
+}

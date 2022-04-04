@@ -1,7 +1,8 @@
 .bp-C-Landing_container{
     @include bp-U-small-heading;
-    
+
     width: inherit;
+    height: 35rem;
     padding: $padding-medium $padding-extra-small;
     display: flex;
     flex-direction: row;
@@ -9,39 +10,46 @@
 
     @media screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) and (orientation: portrait){
         display: block;
-       // max-height: 650px;
-        width: $min-breakpoint-medium;
-        padding-bottom: $padding-extra-large;
+        height: 45rem;
+        width: auto;
+        margin-bottom: $margin-medium;
     }
 
     @media screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) and (orientation: landscape){
-      //  max-height: 650px;
-        width: $min-breakpoint-large;
-        padding-bottom: $padding-extra-large;
+        width: auto;
+        padding-bottom: $padding-none;
+        height: 45rem;
+
+
     }
 
     @media screen and (min-width: $min-breakpoint-extra-small) and (max-width: $max-breakpoint-large){
         display: block;
-      //  max-height: 500px;
-        width: $min-breakpoint-extra-small;
-        padding-bottom: $padding-extra-large;
+        width: auto;
+        padding-bottom: $padding-none;
+        height: 45rem;
+
     }
 
     @media screen and (max-width: $max-breakpoint-extra-small){
         display: block;
+        height: 45rem;
+
       //  max-height: 667px;
     }
 
     .bp-C-Landing_imgContainer{
-        height: inherit;
+        height: auto;
         justify-content: center;
         padding-right: $padding-small;
         display: inline-block;
         width: 33%;
+        
 
         @media screen and (max-width: $max-breakpoint-extra-large) {
-            width: 90%;
-            padding-bottom: $padding-small;
+            width: 60%;
+            padding-bottom: $padding-none;
+            padding-left: $padding-small;
             display: block;
         }
 
@@ -49,19 +57,46 @@
             height: auto;
             width: 100%;
             border-radius: 66%;
+            animation: slidein 2s ease-in;
         }
+
+
     }
 
-    .bp-C-Landing_description{
+    .bp-C-Landing_descriptionContainer{
         height: auto;
         padding-left: $padding-small;
-        vertical-align: middle;
+        text-align: left;
         display: inline-block;
         width: 67%;
 
         @media screen and (max-width: $max-breakpoint-large) {
             width: 90%;
             display: block;
+        }
+        .bp-C-Landing_description-text{
+            animation: slidein 2s ease-in;
+
+
+            h1{
+                @include bp-U-large-heading;
+                margin-top: 0px;
+            }
+    
+            h3{
+                @include bp-U-medium-heading;
+                margin-bottom: 0px;
+
+                @media screen and (min-width: $min-breakpoint-large) {
+                    padding-top: 3rem;
+                }
+            }
+    
+            hr{
+                border: 0.2px solid $dark-green;
+    
+            }
+
         }
     }
 }

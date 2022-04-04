@@ -2,47 +2,111 @@
 @import '../typography/typography.scss';
 
 .bp-C-Navbar_container{
-    
     height: 20%;
-    margin: $margin-small $margin-small;
+    padding: $padding-extra-small $padding-small;
+    width: inherit;
 
+    @media screen and (max-width: $max-breakpoint-large){
+        padding: $padding-extra-small $padding-none;
+    }
+
+    .bp-logo{
+        height: 3rem;
+        width: inherit;
+        display: inline-block;
+
+        @media  screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) {
+            float: right;
+            height: 3.5rem;
+        }
+
+        @media  screen and (min-width: $min-breakpoint-small) and (max-width: $max-breakpoint-large) {
+            float: right;
+            height: 2.5rem;
+        }
+
+        @media  screen and (max-width: $max-breakpoint-small) {
+            float: right;
+            height: 2.2rem;
+        }
+
+    }
     .bp-C-SideNavbar_list{
         list-style: none;
         margin: $margin-none;
         padding: $padding-extra-small $padding-none;
+        position: absolute;
+        width: 100%;
+
         .bp-C-SideNavbar_list_items{
             padding: $padding-extra-small $padding-extra-small;
+            width: 90%;
+            display: block;
+            border-bottom: 1px solid $dark-green;
+            @include bp-U-small-heading;
+            background-color: white;
+
+            a{
+                text-decoration: none;
+                font-weight: 400;
+                color: $dark-green;
+            }
         }
     }
 
     .bp-C-TopNavbar_list{
+        display: inline-block;
         list-style: none;
         margin: $margin-none;
         padding: $padding-none;
+        float: right;
 
         .bp-C-TopNavbar_list_items{
             @include bp-U-small-heading;
-            
+            font-weight: 400;
             padding: $padding-extra-small $padding-extra-small;
             
-            @media screen and (max-width: $max-breakpoint-large) {
+            @media  screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) {
+                padding: $padding-extra-small 0.5rem;
+            }
+
+            @media screen and (max-width: $max-breakpoint-extra-large) {
                 display: none;
             }
+
             a{
-                color: black;
+                color: $pink;
+                font-weight: 400;
                 text-decoration: none;
 
                 &:hover{
                     text-decoration: underline;
+                    text-underline-offset: 1rem;
                 }
             }
         }
     }
 
-    @media screen and (min-width: $min-breakpoint-large) {
-        .bp-C-Hamburger_icon{
+    .bp-C-Hamburger_icon{
+        background-color: $white;
+        border: none;
+        border-radius: 3px;
+        color: $dark-green;
+        font-size: 2rem;
+        font-weight: lighter;
+
+        &:hover{
+            border: 2px solid $white;
+        }
+
+        @media  screen and (min-width: $min-breakpoint-large) and (max-width: $max-breakpoint-extra-large) {
+            font-size: 4rem;
+        }
+
+        @media screen and (min-width: $min-breakpoint-extra-large) {
             display: none;
         }
     }
+    
 
 }

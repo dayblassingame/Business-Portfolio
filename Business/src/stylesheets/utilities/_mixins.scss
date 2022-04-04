@@ -1,5 +1,17 @@
 @mixin bp-U-small-heading{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Anybody';
     font-weight: 300;
     font-size: large;
+}
+
+@mixin bp-U-large-heading{
+    font-family: 'Anybody';
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+@mixin bp-U-medium-heading{
+    font-family: 'Anybody';
+    font-size: 1.9rem;
+    font-weight: 300;
 }
