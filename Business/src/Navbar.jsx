@@ -7,11 +7,11 @@ import logo from './images/logo.png';
 //navigation bar for different pages of site
 
 export function Navbar(){
-const [isActive, setActive] = useState("false");
+    const [isActive, setActive] = useState("false");
 
-const hamburgerMenu = () => {
-    setActive(!isActive);
-};
+    const hamburgerMenu = () => {
+        setActive(!isActive);
+    };
     
     return (
         <div className='bp-C-Navbar_container bp-U-align-content-center'>
